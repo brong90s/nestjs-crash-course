@@ -5,19 +5,19 @@
 * Apply a serializer to limit info shared
 
 #### One-To-One Relationships
-Country <--> Capital
-Car <--> Engine
-Passport <--> Person
-Person <--> Cell Phone
+Country <--> Capital <br />
+Car <--> Engine <br />
+Passport <--> Person <br />
+Person <--> Cell Phone <br />
 
 #### One-to-Many // Many-to-One Relationships
-Customers <--> Orders
-Car <--> Parts
-Country <--> Cities
-Continenet <--> Mountains
+Customers <--> Orders <br />
+Car <--> Parts <br />
+Country <--> Cities <br />
+Continenet <--> Mountains <br />
 
 #### Many-to-Many Relationships
-Trains <--> Riders
-Classes <--> Students
-Parties <--> Students
-Album <--> Genre
+Trains <--> Riders <br />
+Classes <--> Students <br />
+Parties <--> Students <br />
+Album <--> Genre <br />

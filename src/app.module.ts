@@ -2,9 +2,7 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
-import { TypeOrmModule } from '@nestjs/typeorm'
-import { ReportsController } from './reports/reports.controller';
-import { ReportsService } from './reports/reports.service';
+import { TypeOrmModule } from '@nestjs/typeorm';
 import { ReportsModule } from './reports/reports.module';
 import { User } from './users/user.entity';
 import { Report } from './reports/report.entity';
@@ -16,7 +14,7 @@ import { Report } from './reports/report.entity';
     entities: [User, Report],
     synchronize: true 
   }), UsersModule, ReportsModule],
-  controllers: [AppController, ReportsController],
-  providers: [AppService, ReportsService],
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule {}

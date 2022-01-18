@@ -1,0 +1,20 @@
+### Create a new user
+POST http://localhost:5000/auth/signup 
+content-type: application/json
+
+{
+  "email": "testingx1@gmail.com",
+  "password": "12345"
+}
+
+### Signin as an existing users
+POST http://localhost:5000/auth/signin
+content-type: application/json
+
+{
+  "email": "testingx1@gmail.com",
+  "password": "12345"
+}
+
+### Sign out
+POST http://localhost:5000/auth/signout

@@ -22,6 +22,9 @@ export class User {
   @Exclude()
   password: string
 
+  @Column({default: true})
+  admin: boolean
+
   // Understand argument
   // 1. first argument '() => Report' => a function that return the 'Report' entity class. It used to solve circular dependency issue.
   // 2. second argument => a function that take an instance of report, and it going to return reports user.

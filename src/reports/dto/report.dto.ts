@@ -19,6 +19,8 @@ export class ReportDto {
   model: string 
   @Expose()
   mileage: number
+  @Expose()
+  approved: boolean
 
   // '@Transform()' decorator is going to be called with a function, and we're going to destructure of the argument list. We're also going to pull out something call 'obj'.
   // 'obj' is a reference to the original report entity. We're going to take a look at user property and from the user, we're going to pull out the 'id'.
